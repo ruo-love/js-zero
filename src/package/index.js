@@ -1,5 +1,6 @@
 import { initCallback } from "./initCallback";
 import { LifeCycle } from "./life-cycle/index";
+
 (function () {
   /** Detect free variable `global` from Node.js. */
   let nodeGlobal =

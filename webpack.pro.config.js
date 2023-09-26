@@ -1,27 +1,26 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: path.join(__dirname, "./src/package/index.js"),
   output: {
     path: path.join(__dirname, "./dist"),
     filename: "[name].js",
     clean: true,
     library: {
-      name: "@zrcode/mtc",
+      name: "@zrcode/zero",
       type: "umd",
     },
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "./src/index.html"),
-      filename: "index.html",
-    }),
-  ],
+
   resolve: {
     extensions: [".js", ".ts"],
   },
+  plugins: [
+    // 添加 BundleAnalyzerPlugin 插件
+    // new BundleAnalyzerPlugin(),
+  ],
   module: {
     rules: [
       {

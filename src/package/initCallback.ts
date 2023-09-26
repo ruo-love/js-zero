@@ -16,11 +16,11 @@ export function initCallback(zero: Zero) {
 
   /**开始挂载依赖包 */
   zero.lifeCycle.beforeLoad();
-  startLoadPackage();
+  startLoadPackage(zero);
 }
 
-function startLoadPackage() {
+function startLoadPackage(zero: Zero) {
   /**load"@zrcode/jstool": "^0.2.4" js工具包 */
-  initJvarScriptTool();
+  initJvarScriptTool(zero);
   zero.lifeCycle.loaded();
 }

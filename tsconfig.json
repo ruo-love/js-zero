@@ -21,14 +21,6 @@
       "@package/*": ["src/package/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/*.ts",
-    "src/**/**/*.ts",
-    "src/**/**/*.test.ts",
-    "index.d.ts",
-    "type.d.ts",
-    "src/package/index.js"
-  ],
-  "exclude": ["node_modules"]
+  "include": ["src", "dist/types"],
+  "exclude": ["dist"]
 }

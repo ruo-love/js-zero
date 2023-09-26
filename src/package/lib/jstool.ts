@@ -10,12 +10,9 @@ import {
   toRandom,
   toggle,
   sleep,
-  createLocalStorage,
-  encrypto,
-  decrypto,
 } from "@zrcode/jstool";
 
-export default function initJvarScriptTool() {
+export default function initJvarScriptTool(zero: Zero) {
   zero.$set("tool", {
     isEmpty,
     throttle,
@@ -28,8 +25,5 @@ export default function initJvarScriptTool() {
     toRandom,
     toggle,
     sleep,
-    createLocalStorage,
-    encrypto,
-    decrypto,
   });
 }
