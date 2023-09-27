@@ -10,6 +10,9 @@ import {
   toRandom,
   toggle,
   sleep,
+  filterValue,
+  getSearchParams,
+  isNumber,
 } from "@zrcode/jstool";
 
 export default function initJvarScriptTool(zero: Zero) {
@@ -25,5 +28,8 @@ export default function initJvarScriptTool(zero: Zero) {
     toRandom,
     toggle,
     sleep,
+    filterValue,
+    getSearchParams,
+    isNumber,
   });
 }
