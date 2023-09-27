@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [
     // 添加 BundleAnalyzerPlugin 插件
-    // new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin(),
   ],
   module: {
     rules: [

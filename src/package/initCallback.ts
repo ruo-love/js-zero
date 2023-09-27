@@ -1,9 +1,10 @@
+import { deepClone } from "@zrcode/jstool";
 import initJvarScriptTool from "./lib/jstool";
 
 export function initCallback(zero: Zero) {
   function startInit() {
     zero.$set = function (key: string, value: any) {
-      zero[key] = value;
+      zero[key] = deepClone(value);
     };
 
     zero.$get = function (key) {

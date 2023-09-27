@@ -1,6 +1,6 @@
 {
   "name": "@zrcode/zero",
-  "version": "0.0.8",
+  "version": "0.1.1",
   "module": "dist/main.js",
   "main": "dist/main.js",
   "types": "dist/types/index.d.ts",
@@ -45,5 +45,8 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@zrcode/jstool": "^0.3.4",
+    "@zrcode/zero": "^0.1.1"
+  }
 }

@@ -27,6 +27,7 @@ import { LifeCycle } from "./life-cycle/index";
 
   //force inject to global:
   let zero = (root.zero = root.zero || {
+    NAME:"zero",
     BREAKER: {},
     NIL: {},
     VERSION: "0.0.1",

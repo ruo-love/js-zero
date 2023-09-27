@@ -1,1 +1,1 @@
-import "./package/index";
+import "@zrcode/zero";
