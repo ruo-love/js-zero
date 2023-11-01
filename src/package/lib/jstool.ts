@@ -12,11 +12,11 @@ import {
   sleep,
   filterValue,
   getSearchParams,
-  isNumber,
-} from "@zrcode/jstool";
+  isNumber
+} from '@zrcode/jstool';
 
 export default function initJvarScriptTool(zero: Zero) {
-  zero.$set("tool", {
+  zero.$set('tool', {
     isEmpty,
     throttle,
     typeOf,
@@ -30,6 +30,6 @@ export default function initJvarScriptTool(zero: Zero) {
     sleep,
     filterValue,
     getSearchParams,
-    isNumber,
+    isNumber
   });
 }

@@ -1,5 +1,5 @@
-import { deepClone } from "@zrcode/jstool";
-import initJvarScriptTool from "./lib/jstool";
+import { deepClone } from '@zrcode/jstool';
+import initJvarScriptTool from './lib/jstool';
 
 export function initCallback(zero: Zero) {
   function startInit() {

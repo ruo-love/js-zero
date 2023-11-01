@@ -1,20 +1,22 @@
 export class LifeCycle {
   created() {
-    console.log("created");
+    console.log('created');
   }
   inited() {
-    console.log("inited");
+    console.log('inited');
   }
   beforeLoad() {
-    console.log("beforeLoad");
+    console.log('beforeLoad');
   }
   loaded() {
-    console.log("loaded");
+    console.log('loaded');
   }
   beforeDestroy() {
-    console.log("beforeDestroy");
+    console.log('beforeDestroy');
   }
   destroy() {
-    console.log("destroy");
+    console.log('destroy');
   }
 }
+
+//
